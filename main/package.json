@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "set ESBUILD_DISABLE_SERVICE=1 && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
@@ -29,4 +29,3 @@
     "vite": "^7.3.1"
   }
 }
-

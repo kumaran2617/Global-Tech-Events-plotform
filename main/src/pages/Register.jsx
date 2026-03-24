@@ -137,7 +137,8 @@ function Register() {
             {error && <p className="form-error">{error}</p>}
             {submitted && (
               <p className="register-success">
-                Registration submitted. We will email your QR shortly.
+                Registration confirmed for {eventName}. We will email your QR to{' '}
+                {formData.email || 'your inbox'} shortly.
               </p>
             )}
           </div>
